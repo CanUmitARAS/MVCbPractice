@@ -1,0 +1,35 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<h1>aaaaa</h1>
+
+<form action ="/Product/Create" method="POST">
+<div class="mb-3">   
+    <label>Name</label>
+    <input type="text" name="Name" class="form-control" />
+
+</div>    
+
+<div class="mb-3">
+   <label>Price</label>
+   <input type = "text" name"Price" class="form-control"/>
+
+   <label>Seç</label>
+   <select>
+       <option value="Ticket">Ticke</option>
+       <option value="Chat">Chat</option>
+   </select>
+</div>
+<input type="submit" name="Submit" class="form-control" value="Kaydet" />
+
+
+</form>
+
+
+<form asp-controller="Product" asp-action="SaveProduct" metod="post">
+    <label>PrSSice</label>
+   <input type = "text" name"Price" class="form-control"/>
+
+</form>
